@@ -40,8 +40,8 @@
       "pages": ["introduction", "quickstart", "development"]
     },
     {
-      "group": "Essentials",
-      "pages": ["essentials/markdown", "essentials/code", "essentials/images", "essentials/settings", "essentials/navigation"]
+      "group": "Why Okaya.ai?",
+      "pages": ["whyokaya/why_okaya", "whyokaya/security", "whyokaya/analytics", "whyokaya/why_okaya", "whyokaya/why_okaya"]
     },
     {
       "group": "API Documentation",
