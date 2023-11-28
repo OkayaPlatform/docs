@@ -1,73 +1,134 @@
 ---
-title: Welcome to Okaya
-description: "
-Welcome to Okaya
-
-Okaya is the premier platform for developers to manage and optimize AI prompts, all in one web platform. With Okaya, you can take control of your prompts through our intuitive web interface. Decide which AI model to use, choose the best question or prompt, track your expenses per prompt, and discover correlations between prompts. Plus, enjoy the convenience of version history to keep your prompts up-to-date.
-
-Get started with Okaya today. It's designed for the entire team, catering to both software engineers and non-technical project managers.
-
-Welcome to the Okaya documentation. Explore our guides and tutorials to efficiently monitor, observe, and evaluate your prompts using Okaya.
-
-Stay updated by following us on Twitter and joining our Discord community."
+title: "Introduction"
+icon: "rectangle-code"
+iconType: "solid"
 ---
+# The open framework for building AI Assistants
+Welcome to the future of AI integration with [Okaya.ai](http://okaya.ai/) – the essential application for forward-thinking CTOs and VPs who are leading the charge in AI integration.
+### We help you build real AI apps with robust monitoring, prompt versioning, cost analysis, and ways to evaluate the effectiveness of prompts.
 
-<img
-  className="block dark:hidden"
-  src="/images/hero-light.svg"
-  alt="Hero Light"
-/>
-<img
-  className="hidden dark:block"
-  src="/images/hero-dark.svg"
-  alt="Hero Dark"
-/>
+Say goodbye to the complexities of AI integration. **OneLine** offers lightning-fast integration solutions that empower businesses and developers to collaborate seamlessly, all in one place.
+With **OneLine**, simplicity is key. You'll be amazed at how just **one line of code** can bring AI monitoring, automated tests, and a plethora of powerful features into your projects.
 
-## Setting up
 
-The first step to world-class documentation is setting up your editing environnments.
 
+<Frame>
+  <img height="200"  noZoom src="/images/okaya_ai_intro.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+
+
+
+<br></br>
+<br></br>
+<br></br>
+
+## 🚀 Key Features
+
+Unlock a world of possibilities with Okaya's feature-rich toolkit, including:
+
+- **Centralized Prompt Management**: Organize and control all your prompts in one place.
+- **Diverse Library of Language Models**: Access and utilize a vast array of models with ease.
+- **Cache**: Supercharge your AI with intelligent caching solutions.
+- **Alteon LLM Balancer**: Distribute AI workloads intelligently for seamless operations.
+- **GitHub Integration**: Direct integration with GitHub for enhanced security and collaboration.
+- **Advanced AI Model Selection**: Choose the most suitable AI model for specific tasks.
+- **A/B Testing and Analytics**: Test prompts and connectors to identify the best performers and analyze their effectiveness.
+- **Business Orientation**: Tools and functionalities designed to align with business goals and KPIs.
+- **Exclusive Marketplace for Tools for your Agent**: Share, buy, or sell optimized prompts with the community.
+- ... and many more!
+
+<br></br>
+<br></br>
+
+
+
+
+# Integrate Okaya with OneLine
+
+<CodeGroup>
+
+
+```python Python
+    from okaya import Okaya, OkayaConfiguration
+
+    # Usage:
+    config = OkayaConfiguration()
+    okaya_handler = Okaya(config)
+    # okaya_handler.validate_configuration()
+
+
+    text_to_sentiment = "I love ice cream ! "
+    sa_response = okaya_handler.run(prompt_name='santiment-analysis',
+                                  variables={'TEXT': text_to_sentiment,})
+```
+
+```javascript JS
+    import { Okaya, OkayaConfiguration } from 'okaya';
+
+    const config = new OkayaConfiguration();
+    const okayaHandler = new OneLine.Okaya(config);
+    // okayaHandler.validateConfiguration(); // Uncomment if needed
+
+    const textToSentiment = "I love ice cream!";
+    const sentimentAnalysisResponse = okayaHandler.run('santiment-analysis', {
+      TEXT: textToSentiment,
+    });
+```
+
+</CodeGroup>
+
+
+
+## Getting started simple with Okaya OneLine
+
+
+
+<CardGroup cols={3}>
+<Card
+    title="Live Demo"
+    icon="star-of-life" iconType="duotone"  
+    href="https://mintlify.com/docs/development"
+  >
+  </Card>
+<Card
+    title="Getting Started"
+    icon="lightbulb" iconType="duotone"  
+    href="https://mintlify.com/docs/development"
+  >
+  </Card>
+  <Card
+    title="Okaya in 2 Minutes"
+    icon="video" iconType="duotone"  
+    href="https://mintlify.com/docs/development"
+  >
+  </Card>
+
+</CardGroup>
+
+
+
+
+
+## Libraries
+
+Okaya is available as a REST API and maintains client libraries in Python and Javascript.
 <CardGroup cols={2}>
   <Card
-    title="Quick Start"
-    icon="pen-to-square"
+    title="Python"
+    icon="python"  iconType="duotone" 
     href="https://mintlify.com/docs/quickstart"
   >
-     set up locally for easy development
+  </Card>
+  <Card
+    title="JS"
+    icon="js"  iconType="duotone" 
+    href="https://mintlify.com/docs/development"
+  >
   </Card>
 </CardGroup>
 
-## Make it yours
 
-Update your docs to your brand and add valuable content for the best user conversion.
+## Get in touch
+Okaya is being actively developed in open source together with the community. Join our Discord! Provide feedback, report bugs, or request features via GitHub issues.
 
-<CardGroup cols={2}>
-  <Card
-    title="Customize Style"
-    icon="palette"
-    href="https://mintlify.com/docs/settings/global"
-  >
-    Customize your docs to your company's colors and brands
-  </Card>
-  <Card
-    title="Reference APIs"
-    icon="code"
-    href="https://mintlify.com/docs/api-playground/openapi"
-  >
-    Automatically generate endpoints from an OpenAPI spec
-  </Card>
-  <Card
-    title="Add Components"
-    icon="screwdriver-wrench"
-    href="https://mintlify.com/docs/components/accordion"
-  >
-    Build interactive features and designs to guide your users
-  </Card>
-  <Card
-    title="Get Inspiration"
-    icon="stars"
-    href="https://mintlify.com/showcase"
-  >
-    Check out our showcase of our favorite documentation
-  </Card>
-</CardGroup>
+If you want to chat about your use case, reach out to us via email (team@okaya.ai) or schedule a demo.
