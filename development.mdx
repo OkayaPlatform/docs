@@ -50,17 +50,25 @@ Start by cloning the project's GitHub repository, which contains essential code 
 Next, configure the necessary API keys for the services:
 
 ### OpenAI setup
-Create an API key at https://platform.openai.com/account/api-keys<br/>
-Save it as an environment variable under OPENAI_API_KEY
+1. Create an API key at https://platform.openai.com/account/api-keys<br/>
+2. Save it as an environment variable under OPENAI_API_KEY
 ​
 
 
-### Okaya.ai Setup Complete all steps:
+### Okaya.ai Setup :
+<Note>
+## Complete all steps
 If you didnt Install and configure Okaya on your Github please click the following card
     <Steps>
       <Step> 
         <Card title="Install Okaya.ai on Your Github"  iconType="sharp-solid" icon="link"  href="quickstart">
         </Card>
+      </Step>
+      <Step title="Install Okaya.ai with npm on your dev environment">
+        [NPM Packege link](https://www.npmjs.com/package/openai)
+        ```bash npm 
+        npm install -g okaya.ai
+        ```
       </Step>
       <Step  title="Save this key as an environment variable">
         <Card >
@@ -72,85 +80,12 @@ If you didnt Install and configure Okaya on your Github please click the followi
         </Card>
       </Step>
     </Steps>
-    
+</Note> 
 
         
 
 
 
-
-
-
-
-<Info>
-  **Prerequisite** You should have installed Node.js (version 18.10.0 or
-  higher).
-</Info>
-
-Step 1. Install Mintlify on your OS:
-
-<CodeGroup>
-
-```bash npm
-npm i -g mintlify
-```
-
-```bash yarn
-yarn global add mintlify
-```
-
-</CodeGroup>
-
-Step 2. Go to the docs are located (where you can find `mint.json`) and run the following command:
-
-```bash
-mintlify dev
-```
-
-The documentation website is now available at `http://localhost:3000`.
-
-### Custom Ports
-
-Mintlify uses port 3000 by default. You can use the `--port` flag to customize the port Mintlify runs on. For example, use this command to run in port 3333:
-
-```bash
-mintlify dev --port 3333
-```
-
-You will see an error like this if you try to run Mintlify in a port that's already taken:
-
-```md
-Error: listen EADDRINUSE: address already in use :::3000
-```
-
-## Mintlify Versions
-
-Each CLI is linked to a specific version of Mintlify. Please update the CLI if your local website looks different than production.
-
-<CodeGroup>
-
-```bash npm
-npm i -g mintlify@latest
-```
-
-```bash yarn
-yarn global upgrade mintlify
-```
-
-</CodeGroup>
-
-## Deployment
-
-<Tip>
-  Unlimited editors available under the [Startup
-  Plan](https://mintlify.com/pricing)
-</Tip>
-
-You should see the following if the deploy successfully went through:
-
-<Frame>
-  <img src="/images/checks-passed.png" style={{ borderRadius: '0.5rem' }} />
-</Frame>
 
 ## Troubleshooting
 

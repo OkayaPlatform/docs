@@ -1,0 +1,80 @@
+---
+title: "Linkedin Post Generator"
+description: "This tool is designed to automate the creation of engaging and professional LinkedIn posts by leveraging the advanced AI capabilities of Okaya.ai"
+---
+
+Welcome to the LinkedIn Post Generator project documentation. This tool is designed to automate the creation of engaging and professional LinkedIn posts by leveraging the advanced AI capabilities of Okaya.ai. It's ideal for professionals and businesses looking to streamline their content creation process for LinkedIn.
+
+## Practical Example
+
+### Scenario
+
+Marketing professional **Alex** wants to maintain an engaging LinkedIn presence to discuss technology and innovation but struggles to find time for content creation. Alex decides to use the LinkedIn Post Generator.
+
+### Using the LinkedIn Post Generator
+
+#### Input
+
+Alex inputs the following details into the system:
+
+- **Keywords**: "AI, Future Trends"
+- **Tone**: "Inspirational"
+- **Content Guidelines**: "Emphasize how AI is shaping the future"
+
+
+
+
+
+## Why Okaya.ai for LinkedIn Post Generation?
+
+- **Efficient Content Creation**: Automatically generates high-quality, engaging LinkedIn posts.
+- **Customization**: Tailors content to fit specific themes, industries, and tones.
+- **Scalability**: Equally effective for individual professionals or large-scale corporate use.
+- **Consistent Quality**: Ensures a high standard of language and professionalism in all posts.
+
+## Setting Up
+
+Before generating posts, set up your Okaya.ai environment:
+
+```python
+from okaya import Okaya, OkayaConfiguration
+
+# Initialize Okaya
+config = OkayaConfiguration()
+okaya_handler = Okaya(config)
+```
+
+## Generating a LinkedIn Post
+
+Create LinkedIn posts by specifying parameters such as keywords, tone, and content guidelines.
+
+### Inputs
+
+- **Keywords**: Core themes or topics for the post.
+- **Tone**: Desired tone (e.g., professional, friendly, informative).
+- **Content Guidelines**: Specific points or guidelines to include in the post.
+
+
+## Lets Create the prompt in Okaya.ai
+
+
+
+
+
+
+
+### Python Code Example
+
+```python
+# Define parameters for the post
+post_params = {
+    'keywords': 'technology, innovation',
+    'tone': 'professional',
+    'content_guidelines': 'Include latest tech trends'
+}
+
+# Generate the post using Okaya.ai
+generated_post = okaya_handler.run(prompt_name='linkedin-post-generator',
+                                   variables=post_params)
+
+```

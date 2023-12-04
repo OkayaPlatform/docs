@@ -5,7 +5,7 @@
     "dark": "/logo/okaya_logo_white_big.svg",
     "light": "/logo/okaya_logo_blue.svg"
   },
-  "favicon": "/favicon.png",
+  "favicon": "/okaya_favicon_black.png",
   "colors": {
     "primary": "#9563FF",
     "light": "#AE87FF",
@@ -20,40 +20,43 @@
   },
   "topbarLinks": [
     {
-      "name": "Support",
-      "url": "mailto:hi@mintlify.com"
+      "name": "Contact Us",
+      "url": "team@okaya.ai"
     }
   ],
   "topbarCtaButton": {
     "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "url": "https://app.okaya.ai"
   },
   "tabs": [
     {
-      "name": "API Reference",
-      "url": "api-reference"
+      "name": "Examples",
+      "url": "okaya-project-examples"
     }
   ],
   "navigation": [
     {
       "group": "Get Started",
-      "pages": ["introduction", "quickstart", "development"]
+      "pages": ["introduction", "quickstart", "development","prompt_eng"]
     },
     {
       "group": "Why Okaya.ai?",
       "pages": ["whyokaya/why_okaya", "whyokaya/security", "whyokaya/analytics", "whyokaya/why_okaya", "whyokaya/why_okaya"]
     },
     {
-      "group": "API Documentation",
-      "pages": ["api-reference/authentication"]
+      "group": "Okaya Examples",
+      "pages": ["okaya-project-examples/projects/project_list",
+                "okaya-project-examples/projects/linkedin_post",
+                "okaya-project-examples/projects/finance_bot",
+                "okaya-project-examples/projects/agent"]
     },
     {
       "group": "Endpoint Examples",
       "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/update",
-        "api-reference/endpoint/delete"
+        "okaya-project-examples/endpoint/get",
+        "okaya-project-examples/endpoint/create",
+        "okaya-project-examples/endpoint/update",
+        "okaya-project-examples/endpoint/delete"
       ]
     }
   ],
